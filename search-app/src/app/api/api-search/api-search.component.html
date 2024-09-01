@@ -1,0 +1,10 @@
+<mat-toolbar class="container mat-secondary mat-background" style="height: 10vh;" fxLayout="row" fxLayoutAlign="end center">
+  <form class="example-form" fxFlex="100" fxLayout="row" fxLayoutAlign="center center">
+    <mat-form-field class="header-message" fxFlex="50">
+      <span matPrefix></span>
+      <input type="tel" matInput placeholder="Search" name="search" [(ngModel)]="search">
+      <button matSuffix mat-button><mat-icon>search</mat-icon></button>
+    </mat-form-field>
+  </form>
+</mat-toolbar>
+<app-api-card [characters]="characters"></app-api-card>
